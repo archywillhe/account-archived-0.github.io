@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago</title>
+  <meta property="og:url"                content="http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/" />
+  
+  <meta property="og:type"               content="article" />
+  
+  <meta property="og:title"              content="Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago" />
+  <meta property="og:description"        content="" />
+  <meta property="og:image"              content="/assets/img/" />
+  <meta name="keywords" content="0a, Archy Wilhes, explains">
+  <meta name="description" content="">
+  
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  
+  <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/">
+  <link rel="alternate" type="application/rss+xml" title="0a: a thunk, a propositional variable, a \n" href="http://0a.io/feed.xml" />
+  <script src="/assets/js/core.js"></script>
+   
+    
+</head>
+
+
+<body class="notHomePage dailylog entirelog ">
+
+<header class="archyhead_wrap">
+  <div class="archyhead">
+    <div class="page_meta_info_wrapper">
+      <div class="page_meta_info">
+          
+         <div class="central block0a">
+    <div class="inline headerDOM">
+  <a class="_0a" href="/">
+    <div class="logo">
+      <span>0a</span>
+      <img src="/assets/img/0a.png" alt="0a">
+    </div>
+  </a>
+  <div class="views_choices">
+       <div class="nav_choices">
+       <a href="/about" class="opacity_hover about_trigger"><div class="nav_choice"><span>About</span></div></a>
+      
+
+     
+       <a href="/dailylogs" class="opacity_hover"><div class="nav_choice"><i class="fa fa-key fa-lg"></i> </div></a>
+     
+     
+      <a href="/feed.xml" class="opacity_hover" target="_blank"><div class="nav_choice"><span><i class="fa fa-rss fa-lg"></i> </span></div></a>
+    </div>
+  </div>
+</div>
+</div>
+
+        <div class="arrow inline hideInMobile">
+          <img src="/assets/img/arrow.png">
+        </div>
+        <div class="current_region inline hideInMobile">
+          <a href= " /dailylogs/ "><span>Some Logs<br>of Arch's</span></a>
+
+        </div>
+        
+        
+        
+        <div class="arrow inline hideInMobile">
+          <img src="/assets/img/arrow.png">
+        </div>
+          <div class="readmore inline hideInMobile">
+          <p class="text-center">Jul 3<br>2015</p></div>
+        </div>
+        
+      </div>
+    </div>
+     
+  </div>
+</header>
+
+
+
+<article itemscope itemtype="http://schema.org/Article">
+<div class="archywrap">
+<div class="container">
+<div class="archypost garamond postTitle">
+
+
+<h1><span>
+
+Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago
+
+</span></h1>
+<span class="hiding"> by <span itemprop="author">Archy Wilhes</span> </span>
+<p class="belowtitle"><i class="fa fa-dot-circle-o fa-lg"></i> <time itemprop="datePublished">
+
+Jul 3, 2015
+
+</time>
+
+<!-- <span class="margin-left-11px">
+
+<a href=" https://www.facebook.com/sharer/sharer.php?u=http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/ "  onclick="window.open(' https://www.facebook.com/sharer/sharer.php?u=http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/ ', 'newwindow', 'width=400, height=350'); return false;">
+<i class="fa fa-facebook fa-lg smaller"></i>
+</a>
+
+<a href=" https://twitter.com/intent/tweet?text=Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago&url=http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/"  onclick="window.open(' https://twitter.com/intent/tweet?text=Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago&url=http://0a.io/backup-your-code-every-n-minutes-with-git-and-watch/', 'newwindow', 'width=400, height=350'); return false;"><i class="fa fa-twitter fa-lg smaller"></i></a>
+</span> --></p>
+</div>
+
+
+<div class="archypost   lato ">
+<div class="archycontent"> <div class="articleBody" itemprop="articleBody"> <p>I just reinstalled my OS X recently, which not only enabled me to re-experience the joy of owning a new Mac, but also fixed problems like waking up into a partially slumber stage with a black screen and a movable cursor that is practically useless. Since I was going to <a href="http://stackoverflow.com/questions/27381531/how-to-install-sublime-text-3-using-homebrew"><code class="highlighter-rouge">brew cask install</code></a> a brand new <a href="http://www.sublimetext.com/">Sublime Text Editor</a>, I decided to spend a bit more effort customizing it. After some googling and experimentation, these are my settings:</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"bold_folder_labels"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"caret_style"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phase"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"color_scheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Packages/Color Scheme - Default/Blackboard.tmTheme"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"draw_minimap_border"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"draw_white_space"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ensure_newline_at_eof_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"fade_fold_buttons"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"find_selected_text"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"font_face"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Source Code Pro Light"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"font_size"</span><span class="p">:</span><span class="w"> </span><span class="mf">14.0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"highlight_line"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"ignored_packages"</span><span class="p">:</span><span class="w">
+    </span><span class="p">[</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"letter-spacing-length"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"line_padding_bottom"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"line_padding_top"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"rulers"</span><span class="p">:</span><span class="w">
+    </span><span class="p">[</span><span class="w">
+        </span><span class="mi">120</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"shift_tab_unindent"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"spacegray_sidebar_font_normal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"spacegray_sidebar_tree_xlarge"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"spacegray_tabs_auto_width"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"spacegray_tabs_font_normal"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"spacegray_tabs_large"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"tab_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"theme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spacegray.sublime-theme"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"translate_tabs_to_spaces"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"trim_trailing_white_space_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"vintage_start_in_command_mode"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"word_separators"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./\\()\"'-:,.;&lt;&gt;~!@#$%^&amp;*|+=[]{}`~?_"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"word_wrap"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>(For the record Source Code Pro can be grabbed <a href="https://github.com/adobe-fonts/source-code-pro">here</a>; Spacegray <a href="https://github.com/kkga/spacegray">here</a>; and Blackboard <a href="https://github.com/cfletcher1856/Theme-Blackboard">here</a>)</p>
+
+<p class="text-center"><img src="/assets/img/sublime.png" alt="oh" /></p>
+
+<p>This looked like a great environment to code in (I enabled <a href="http://www.sublimetext.com/docs/2/vintage.html">vintage mode</a> too so there are vim magic in it ;3 ) until I learnt that sometimes the text editor would revert some file back to its state x hours ago with no reason at all.</p>
+
+<p>It is a nightmare. (Imagine happily committing your code only to learn all that you’ve written &amp; tested no longer exist in the current dimensions in space-time.)</p>
+
+<p>I still don’t have a clue what is the cause. (I only have a few plug-ins installed. I don’t think the plug-ins have to do with it.) But it has happened quite a few times and I have had my losses. Until I figure out what’s causing the strange phenomenon and get it fixed, I need to start taking precaution.</p>
+
+<p>Here is a simple system that uses <a href="http://linux.die.net/man/1/watch"><code class="highlighter-rouge">watch</code></a> with the help of <code class="highlighter-rouge">git</code> to make backup of every single file in a directory every 90 seconds:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">watch</code> can execute a line of code periodically in the terminal. The nice thing is that you can watch the outputs as it does.</p>
+</blockquote>
+
+<p>Let’s say this is the directory containing projects you want to back up</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/Users/a/_/_</code></pre></figure>
+
+<p>1) Make a directory to keep the back up files</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir /Users/a/_/timeMachine    <span class="c">#or any directory of your choice</span></code></pre></figure>
+
+<p>2) Make it into a git repo.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Users/a/_/timeMachine
+git init    <span class="c">#this would create a .git folder in /Users/a/_/timeMachine</span>
+            <span class="c">#now /Users/a/_/timeMachine is a git repo</span></code></pre></figure>
+
+<p>3) Write a bash script that</p>
+
+<ol>
+  <li>Copy everything in the directory to the backup directory</li>
+  <li>Remove all the <code class="highlighter-rouge">.git</code> folders from each project in the backup directory (The <code class="highlighter-rouge">.git</code> folder is what that determines a directory to be a git repo: removing it would turn git repo back to a normal directory. In order for <code class="highlighter-rouge">commit</code> to work, it is necessary to have every subdirectory as a non git repo. If not, the subdirectories containing <code class="highlighter-rouge">.git</code> will be treated as <a href="http://git-scm.com/docs/git-submodule">git submodules</a>.) <br /> [Changes made in a git submodule can’t be committed as changes of the main git repo.]</li>
+  <li>Git add &amp; commit everything in the backup directory</li>
+</ol>
+
+<p>and save it as <code class="highlighter-rouge">script.sh</code>.(You can save it at anywhere you want)</p>
+
+<p>Here is my <code class="highlighter-rouge">script.sh</code>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Users/a/_                       <span class="c">#replace this with the directory you want to back up</span>
+cp -rf _/<span class="k">*</span> timeMachine              <span class="c">#replace this with the directory to back up to</span>
+rm -rf timeMachine/<span class="k">*</span>/.git           <span class="c">#remove all .git folders in each project</span>
+<span class="nb">cd </span>timeMachine
+git add .                           <span class="c">#add any changes</span>
+git commit -am <span class="s2">"</span><span class="sb">`</span>date +%F-%T<span class="sb">`</span><span class="s2">"</span>      <span class="c">#commit to store the changes</span></code></pre></figure>
+
+<p>4) Simply run this script periodically using <code class="highlighter-rouge">watch</code> (You can install it with <a href="http://brew.sh/">brew</a> if you don’t have it).</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">brew install watch          <span class="c">#brew is a package manager for OSX. http://brew.sh/</span>
+watch -n 90 <span class="s1">'bash script.sh'</span></code></pre></figure>
+
+<p>That’s it. Now every 90 seconds, the changes you made in your project (e.g. <code class="highlighter-rouge">/Users/a/_/0a-.github.com</code>) would be recorded in the backup directory. You can view changes of the file using <a href="http://git-scm.com/docs/git-log"><code class="highlighter-rouge">git log</code></a>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Users/a/_/timeMachine/0a-.github.com
+git log -p myFile.js</code></pre></figure>
+
+<p>or do it in <a href="https://mac.github.com/">a GUI Client</a>. (They would show up in the Unsynced tab because all we are doing is just <a href="http://git-scm.com/docs/git-commit">committing</a> and there is no <a href="http://git-scm.com/docs/git-push">pushing</a> involved.)</p>
+
+<p class="text-center"><img src="/assets/img/timeMachine.jpg" alt="such time much machine" /></p>
+
+<p>The backup directory is going to take more and more disk space as time passes (as long as you remember to <code class="highlighter-rouge">watch -n 90 'bash script.sh'</code> before you start to code each time). When you want to clean everything up, simply remove everything (including the <code class="highlighter-rouge">.git</code> folder) and do a <code class="highlighter-rouge">git init</code> again.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Users/a/_/timeMachine   <span class="c">#replace it with your backup repo</span>
+rm -rf <span class="k">*</span>        <span class="c">#this can be deadly if used unwisely</span>
+git init</code></pre></figure>
+
+<p>The great thing about using git is that only the changes of the files would be saved. So rather than having 10 backup copies of a project that are slightly different from one another, you’d only have one copy of it, and 9 indications of the different changes you made at different times.</p>
+ </div> </div>
+
+<div class="articleFooter">
+<div class="kudobox">
+<div class="kudos" data-url="0a.io/backup-your-code-every-n-minutes-with-git-and-watch/"></div>
+</div>
+<div class="showDisqus display-none">
+<a>Show Comments</a>
+</div>
+
+</div>
+<div id="disqus_thread">
+    
+</div>
+
+</div>
+<script src="/assets/js/kudosplease.js">
+</script>
+<script src="/assets/js/article.js">
+</script>
+
+
+</div>
+</div>
+
+</article>
+
+
+
+<footer class="foot">
+
+<div>
+<a target="_blank" href="https://github.com/0a-/0a-.github.io"> View source</a></div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54767208-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+
+</html>

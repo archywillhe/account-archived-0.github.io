@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>0a explains: Set Theory and Axiomatic Systems (with pics and gifs)</title>
+  <meta property="og:url"                content="http://0a.io/set-theory-and-axiomatic-systems" />
+  
+  <meta property="og:type"               content="article" />
+  
+  <meta property="og:title"              content="0a explains: Set Theory and Axiomatic Systems (with pics and gifs)" />
+  <meta property="og:description"        content="Set Theory and Axiomatic Systems explained. For anyone who is new to axiomatic set theory." />
+  <meta property="og:image"              content="/assets/img/the-bride-after-duchamp-1934.jpg" />
+  <meta name="keywords" content="0a, Archy Wilhes, explains">
+  <meta name="description" content="Set Theory and Axiomatic Systems explained. For anyone who is new to axiomatic set theory.">
+  
+  
+
+   <!-- garamond is no longer in used;
+   <script type="text/javascript" src="//use.typekit.net/agx1ofd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+ <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://0a.io/set-theory-and-axiomatic-systems">
+  <link rel="alternate" type="application/rss+xml" title="0a: a thunk, a propositional variable, a \n" href="http://0a.io/feed.xml" />
+  <script src="/assets/js/core.js"></script>
+   
+    <!--[if lt IE 9]>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/assets/js/chapterMenu.js"></script>
+<script type="text/x-mathjax-config"> 
+ MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                                        tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                                        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+                                        messageStyle: "none"
+                });
+    if($(window).width()>920){
+    MathJax.Hub.Queue(function(){
+        window.chapterMenu();
+    });
+    }else{
+    MathJax.Hub.Queue(function(){
+       $(".loading_maths").fadeOut(300);
+    });
+    }
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+
+
+<body class="notHomePage  ">
+
+<header class="archyhead_wrap">
+  <div class="archyhead">
+    <div class="page_meta_info_wrapper">
+      <div class="page_meta_info">
+          
+         <div class="central block0a">
+    <div class="inline headerDOM">
+  <a class="_0a" href="/">
+    <div class="logo">
+      <span>0a</span>
+      <img src="/assets/img/0a.png" alt="0a">
+    </div>
+  </a>
+  <div class="views_choices">
+       <div class="nav_choices">
+       <a href="/about" class="opacity_hover about_trigger"><div class="nav_choice"><span>About</span></div></a>
+      
+
+     
+       <a href="/dailylogs" class="opacity_hover"><div class="nav_choice"><i class="fa fa-key fa-lg"></i> </div></a>
+     
+     
+      <a href="/feed.xml" class="opacity_hover" target="_blank"><div class="nav_choice"><span><i class="fa fa-rss fa-lg"></i> </span></div></a>
+    </div>
+  </div>
+</div>
+</div>
+
+        <div class="arrow inline hideInMobile">
+          <img src="/assets/img/arrow.png">
+        </div>
+        <div class="current_region inline hideInMobile">
+          <a href= " /0a-explains/ "><span>0a Explains<br>Series</span></a>
+
+        </div>
+        
+        
+        <div class="arrow inline hideInMobile">
+          <img src="/assets/img/arrow.png">
+        </div>
+        <div class="archyitem inline hideInMobile">
+          <a class="forward_to_post thumbnail"><img class="article_meta_cover_picture" src=" /assets/img/the-bride-after-duchamp-1934.jpg " alt="">
+
+          </a>
+          <div class="archytitle garamond"><a class="forward_to_post">0a explains: Set Theory and Axiomatic Systems (with pics and gifs)</a></div>
+        </div>
+        
+        
+      </div>
+    </div>
+     
+  </div>
+</header>
+
+<article itemscope itemtype="http://schema.org/Article">
+<div class="archywrap">
+<div class="container">
+<div class="archypost garamond postTitle">
+
+
+<div class="archysub">dedicated to the curious minds</div>
+
+<h1><span>
+
+0a explains: Set Theory and Axiomatic Systems (with pics and gifs)
+
+</span></h1>
+<span class="hiding"> by <span itemprop="author">Archy Wilhes</span> </span>
+<p class="belowtitle"><i class="fa fa-dot-circle-o fa-lg"></i> <time itemprop="datePublished">
+
+Feb 19, 2015
+
+</time>
+
+<span class="margin-left-20px">
+<i class="fa fa-bullseye fa-lg"></i> 1 min  read </span>
+
+<!-- <span class="margin-left-11px">
+
+<a href=" https://www.facebook.com/sharer/sharer.php?u=http://0a.io/set-theory-and-axiomatic-systems "  onclick="window.open(' https://www.facebook.com/sharer/sharer.php?u=http://0a.io/set-theory-and-axiomatic-systems ', 'newwindow', 'width=400, height=350'); return false;">
+<i class="fa fa-facebook fa-lg smaller"></i>
+</a>
+
+<a href=" https://twitter.com/intent/tweet?text=0a explains: Set Theory and Axiomatic Systems (with pics and gifs)&url=http://0a.io/set-theory-and-axiomatic-systems"  onclick="window.open(' https://twitter.com/intent/tweet?text=0a explains: Set Theory and Axiomatic Systems (with pics and gifs)&url=http://0a.io/set-theory-and-axiomatic-systems', 'newwindow', 'width=400, height=350'); return false;"><i class="fa fa-twitter fa-lg smaller"></i></a>
+</span> --></p>
+</div>
+
+</div>
+</div>
+
+<div class="container" id="articleContainer">
+<div class="archypost wordsToRead  garamond ">
+<div class="archycoverpic showInMobile">
+        <img src=" /assets/img/the-bride-after-duchamp-1934.jpg " alt="">
+      </div>
+<div class="archycontent articleBody" itemprop="articleBody"><blockquote>
+  <p class="_index"></p>
+  <p class="text-center"><b>PROLOGUE </b> (abridged)</p>
+
+  <p><a href="/prologue-for-0a-explains-set-theory-and-axiomatic-systems">…</a> At the moment I’m still reading up on general topology and working on the article, <i>0a explains: general topology</i>. At some point in time I decided to have set theory, which initially was one of its segments, in a separate article instead. And just to make things more interesting, I figured I should “dive in” slightly deeper and give an axiomatic view on some of the concepts.</p>
+
+  <p>So here you go.</p>
+
+  <p>Enjoy!</p>
+
+</blockquote>
+
+<p class="_index">We can't be absolutely certain that anything is real. Did the past actually exist? That may appear to be an absurd question to ask. But how can you be so sure that events you remember really did occur? You can argue that you are able see their consequences in the present, or other people would agree with you that they happened. But that is based on the assumption that reality did not just come into existence a moment ago in a predefined state, together with memory of a non-existed past implanted in your mind.</p>
+
+<p>As a human being, we live our lives presuming that some things are real just because it is more convenient to do so, despite the fact that there is no way to absolutely prove that they are true without making more assumptions.</p>
+
+<p>We do that too in mathematics. An axiomatic system is made up of a collection of mathematical statements (known as <i>axioms</i>) that are defined to be true, so that we can use them to further define mathematical objects (e.g. number, function) and prove statements which we believe to be true (such as the <a target="_blank" href="https://www.youtube.com/watch?v=rGo2hsoJSbo">Riemann hypothesis</a>).</p>
+
+<blockquote>
+  <p>Sometimes, an axiom can appear to be stating the obvious. Here is an example:</p>
+
+  <script type="math/tex; mode=display">A \Rightarrow \neg \neg A</script>
+
+  <p>This is an axiom in <a target="_blank" href="http://en.wikipedia.org/wiki/Frege's_propositional_calculus">Frege’s axiomatic system on propositional calculus</a>.</p>
+
+  <div class="row d_shortcuts">"$\Rightarrow$" means <i><a target="_blank" href="http://en.wikipedia.org/wiki/Material_conditional">imply</a></i>.
+"$\neg$" means <i><a target="_blank" href="http://en.wikipedia.org/wiki/Negation">not</a></i>.</div>
+
+  <p>We can read it as:</p>
+
+  <p><script type="math/tex">A \text{ implies not not } A</script>
+<script type="math/tex">\text{or}</script>
+<script type="math/tex">\text{If }A \text{ is true, the negation of the negation of }A \text{ (double negation) is true.}</script></p>
+
+  <p>When I said that “<script type="math/tex">\Rightarrow</script>” means <i>imply</i>, it is more of a suggestion on how we should interpret it. After all, “<script type="math/tex">\Rightarrow</script>” is nothing more than a symbol for a mathematical concept that exists in a rather abstract way. It doesn’t really have a “meaning” per se.</p>
+
+  <p>But since we are humans, it is often useful to “impose” meanings upon mathematical concepts (e.g. “+” means addition). Just bear in mind that when we want to closely examine these concepts, we should take a step back and forget what we know, and perceive them in terms of axioms.</p>
+
+  <p>The axiom above is defining a fundamental property about the mathematical concept associated with the symbol “<script type="math/tex">\Rightarrow</script>”.</p>
+</blockquote>
+
+<h3>So what exactly is an axiomatic system?</h3>
+<p>An axiomatic system is a list of undefined terms (each to represent some mathematical object) with a list of axioms that express relations between these terms.</p>
+
+<p>When we have a collection of mathematical objects that are to be represented by these terms, and we start interpreting them (with regard to the axioms), it is said that we have a <b>model</b> of the axiomatic system.</p>
+
+<p class="text-center"> ● ● ● </p>
+
+<p>There are many different axiomatic systems that formalize set theory. Before getting started on these axiomatic systems, let’s first look at set theory in <a target="_blank" href="http://en.wikipedia.org/wiki/Naive_set_theory">a more “naive” way</a> without concerning too much about the formalism.</p>
+
+<h3 class="_index">What is set theory?</h3>
+<p>Set theory is considerably the heart of modern mathematics. As suggested by its name, set theory is all about the mathematical objects known as sets.</p>
+
+<p>A set can be thought as a collection of things. We refer to these things as the elements of the set.</p>
+
+<p class="text-center"><img src="/assets/img/set.png" /></p>
+
+<p>When talking about the elements in a set, our only concern is their existence. So we don’t really care about the number of identical elements. It either exists, or it doesn’t. The concept of quantity is not important to us.</p>
+
+<script type="math/tex; mode=display">\text{it's pointless to have the extra } a \text{ in } \{a,a,b,c\} \\ \{a,b,c\} = \{a,a,b,c\}</script>
+
+<p>Neither do we care about the order they are in.</p>
+
+<script type="math/tex; mode=display">\{a,b,c\}=\{b,c,a\}</script>
+
+<p class="_index">This whole idea of existence being our only concern for elements in a set can be seen in <i>the axiom of extensionality</i>. </p>
+
+<script type="math/tex; mode=display">\forall A \, \forall B \, (\forall x \ (x \in A \Leftrightarrow x \in B) \, \Rightarrow A = B)</script>
+
+<blockquote>
+  <p><i>The axiom of extensionality</i> is an axiom that’s been used in a couple of axiomatic systems on set theory, including the famous <i><a target="_blank" href="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">Zermelo–Fraenkel set theory</a></i> (ZF), <i><a target="_blank" href="https://proofwiki.org/wiki/Definition:G%C3%B6del-Bernays_Axioms">von Neumann–Bernays–Gödel set theory</a></i> (NGB) and <i><a target="_blank" href="http://math.boisestate.edu/~holmes/holmes/nf.html">New Foundations</a></i> (NF).</p>
+</blockquote>
+
+<p>To understand the symbolism, just keep in mind that</p>
+
+<div class="row d_shortcuts">
+"$\in$" means <a target="_blank" href="https://proofwiki.org/wiki/Definition:Element"><i>is an element of</i> (or <i>in</i>)</a>.
+"$\forall$" means <a target="_blank" href="http://en.wikipedia.org/wiki/Universal_quantification"><i>for any</i> (or <i>for all</i>, or <i>for every</i>, etc)</a>.
+"$\Leftrightarrow$" is the "two-ways imply", it means <a target="_blank" href="http://mathworld.wolfram.com/Iff.html"><i>if and only if</i></a>.
+</div>
+
+<p>Thus the axiom can be read as:</p>
+
+<script type="math/tex; mode=display">\text{for any } A \text{ and } B \\ \text{ if it is true for every } x \text{ that } x \text{ is in } A \text{ if and only if } x \text{ is also in } B \\ \text{then it would imply that } A = B \text{.}</script>
+
+<p>Basically what it’s saying is that two sets (<script type="math/tex">A</script> and <script type="math/tex">B</script>) are equivalent as long as every element in <script type="math/tex">A</script> is in <script type="math/tex">B</script>, and every element in <script type="math/tex">B</script> is also in <script type="math/tex">A</script>. This appears to be a rather obvious thing to say. But it is necessary to have an axiom like this serving as a foundation for the mathematical idea of set.</p>
+
+<blockquote>
+  <p>With this axiom, we can prove that <script type="math/tex">\{a,b,c\} = \{b,c,a\}</script> by stating that each element in <script type="math/tex">\{a,b,c\}</script> is also in <script type="math/tex">\{b,c,a\}</script>, and vice versa: so by the axiom, the ordering of elements does nothing to how we perceive a set.</p>
+
+  <p>The same goes to the quantity:</p>
+
+  <script type="math/tex; mode=display">\forall x (x \in \{a,a\} \Leftrightarrow x \in \{a\}), \text{therefore } \{a,a\} = \{a\}</script>
+
+  <p>Note: <script type="math/tex">x</script> in the above statement works as a variable, in this case it is representing <i>any element of a certain set</i>. Since for any element in <script type="math/tex">\{a,a\}</script>, it is also in <script type="math/tex">\{a\}</script>, and vice  versa, so <script type="math/tex">\{a,a\}</script> is equivalent to <script type="math/tex">\{a\}</script>.</p>
+</blockquote>
+
+<h3 class="_index">More on <i>the axiom of extensionality</i></h3>
+<p>An interesting consequence of <i>the axiom of extensionality</i> is that it implies a universe where everything is built up with sets. A universe where the notion of <b>urelements</b> no longer makes sense.</p>
+
+<blockquote>
+  <h4>What is a urelement?</h4>
+  <p>A <b>urelements</b> (also called “atom”) is a mathematical objects that is an element of some set, but is not a set itself.</p>
+
+  <p class="text-center"><img src="/assets/img/urelements.png" /></p>
+
+  <p>For example, natural numbers are often considered to be urelements. (Provided that you don’t define natural numbers to be sets of certain structure.) Since urelements are not sets, they contain no elements. But they can still be different from one another by their properties:</p>
+
+  <script type="math/tex; mode=display">1 \not= 2</script>
+</blockquote>
+
+<p><i>The axiom of extensionality</i> expresses that the statement</p>
+
+<script type="math/tex; mode=display">\forall x \, (x \in A \Leftrightarrow x \in B) \, \Rightarrow A = B</script>
+
+<p>is true for all objects A and B in the universe (hence the <a target="_blank" href="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, <script type="math/tex">\forall</script></a>). As long as we have two mathematical objects that contain no elements, they would be identical by definition.</p>
+
+<script type="math/tex; mode=display">\text{If  }\forall x \, (x \in 1 \Leftrightarrow x \in 2) \text{ is true, then } 1 = 2</script>
+
+<p>Simply put it, this axiom implies that every mathematical object in the universe is distinguished only by their elements. So you can’t have mathematical objects that contain no element but are different. This is what I mean by the notion of urelements no longer makes sense, and this is where things get really interesting.</p>
+
+<p>In such universe, empty set is the building block of everything. Let’s say we have a set <script type="math/tex">A=\{a,b\}</script>. Here is an example of what <script type="math/tex">a</script> and <script type="math/tex">b</script> can be:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align} a &= \{\} =\varnothing \\ b &= \{\{\}\} =\{\varnothing\} \end{align} %]]></script>
+
+<blockquote>
+  <p>By the <i>axiom of extensionality</i>, we can see that:</p>
+
+  <script type="math/tex; mode=display">\forall x (x \in \{\{\}\} \not\Leftrightarrow x \in \{\}), \text{therefore } \{\varnothing\} \not= \varnothing</script>
+</blockquote>
+
+<p>No matter what mathematical objects we come up with, if we look at their elements, the elements of their elements, the elements of the elements of their elements … we will eventually arrive at an empty set. Here is an example</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align} W &= \{a,b,c,d\} \\ ( a=\{b,\{c\}\} ) \Rightarrow W&=\{\{b,\{c\}\},b,c,d\} \\ ( b=\{\{d\}\} ) \Rightarrow W&=\{\{\{\{d\}\},\{c\}\},\{\{d\}\},c,d\} \\ ( c=\varnothing ) \Rightarrow W&=\{\{\{\{d\}\},\{\varnothing\}\},\{\{d\}\},\varnothing,d\} \\ ( d=\{\varnothing,\{\varnothing\}\}  ) \Rightarrow W&=\{\{\{\{\{\varnothing,\{\varnothing\}\}\}\},\{\varnothing\}\},\{\{\{\varnothing,\{\varnothing\}\}\}\},\varnothing,\{\varnothing,\{\varnothing\}\}\} \end{align} %]]></script>
+
+<p>In this universe, natural numbers would have to be built up with empty set too. This is Zermelo’s construction/definition of natural numbers:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}0 &:= \{\} = \varnothing \\ 1 &:= \{0\} = \{\{\}\} = \{\varnothing\} \\ 2 &:= \{1\} = \{\{0\}\} = \{\{\{\}\}\} = \{\{\varnothing\}\}  \end{align} \\ %]]></script>
+
+<script type="math/tex; mode=display">...</script>
+
+<p>We can say that this is the universe <i> the axiom of extensionality </i> has beautifully entailed.</p>
+
+<blockquote>
+  <p>“It is said that the world is empty, the world is empty, lord. In what respect is it said that the world is empty?” The Buddha replied, “Insofar as it is empty of a self or of anything pertaining to a self: <a target="_blank" href="http://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">Thus it is said, Ānanda, that the world is empty</a>.”</p>
+
+  <p class="text-center"><img src="/assets/img/mindexplosion.gif" /></p>
+
+  <p><i>I was exposed to ideas in Buddhism when I was young. Just pointing out an interesting resemblance here.</i></p>
+</blockquote>
+
+<p class="text-center"> ● ● ● </p>
+
+<h3 class="_index">Defining a set with a statement</h3>
+<p>Rather than explicitly writing down its elements like this: <script type="math/tex">A=\{a,b\}</script>, a set can also be defined this way:</p>
+
+<script type="math/tex; mode=display">Y=\{x \in \mathbb{R}    x \not\in \mathbb{Q}\}</script>
+
+<p>The statement above can be read as:</p>
+
+<script type="math/tex; mode=display">Y \text{ is a set made up of each element, } x \text{, in } \mathbb{R} \text{ that is not in } \mathbb{Q} \text{.}</script>
+
+<blockquote>
+  <p>Since <a target="_blank" href="http://en.wikipedia.org/wiki/Real_numbers"><script type="math/tex">\mathbb{R}</script> is the set of all real numbers</a>, and <a target="_blank" href="http://en.wikipedia.org/wiki/Rational_number"><script type="math/tex">\mathbb{Q}</script> is the set of all rational numbers</a>, <script type="math/tex">Y</script> here is the set of all irrational numbers.</p>
+</blockquote>
+
+<h3 class="_index">On set operators</h3>
+<p>Besides the <script type="math/tex">\in</script> set operator, which is the primary operator in set theory, there are other set operators too. And they can all be defined in terms of <script type="math/tex">\in</script>.</p>
+
+<p><span class="hightlight">Union ( <script type="math/tex">\cup</script> )</span>: getting all elements from two sets.</p>
+
+<script type="math/tex; mode=display">A \cup B = \{x \in c   c \in \{A,B\}\}</script>
+
+<p><span class="hightlight">Intersection ( <script type="math/tex">\cap</script> )</span>: getting elements two sets have in common.</p>
+
+<script type="math/tex; mode=display">A \cap B = \{x \in A   x \in B \}</script>
+
+<p><span class="hightlight">Difference ( <script type="math/tex">\setminus</script> )</span>: getting elements from one set, that are not in another sets.</p>
+
+<script type="math/tex; mode=display">A \setminus B = \{x \in A   x \not\in B \}</script>
+
+<blockquote>
+  <p>Hence, in the example above, <script type="math/tex">Y</script> can expressed as a <span class="hightlight">difference</span>:</p>
+
+  <script type="math/tex; mode=display">% <![CDATA[
+\begin{align} Y&=\{x \in \mathbb{R}    x \not\in \mathbb{Q}\} \\ Y &= \mathbb{R} \setminus \mathbb{Q} \end{align} %]]></script>
+</blockquote>
+
+<p><span class="hightlight">Complement ( <script type="math/tex">^c</script> )</span>: getting all elements in the universe that are not in some set.</p>
+
+<script type="math/tex; mode=display">A^c = \{x \in U   x \not\in A \} \text{ , where } U \text{ is the universe}</script>
+
+<blockquote>
+  <p>So <script type="math/tex">Y</script> can also be defined as a <span class="hightlight">complement</span>, if we define <script type="math/tex">\mathbb{R}</script> to be the universe:</p>
+
+  <script type="math/tex; mode=display">% <![CDATA[
+\begin{align} Y &= \mathbb{U} \setminus \mathbb{Q} \\ Y&= \mathbb{Q}^c \end{align} %]]></script>
+</blockquote>
+
+<h3 class="_index">What is a subset?</h3>
+<p>A set is a subset of another set when all its elements are in the other set ( Denoted as <script type="math/tex">\subset</script> )</p>
+
+<script type="math/tex; mode=display">A \subseteq B \Leftrightarrow \forall x ( x \in A \Rightarrow x \in B)</script>
+
+<blockquote>
+  <p>In the example above, <script type="math/tex">Y</script> is a subset of <script type="math/tex">\mathbb{R}</script>. We often use “<script type="math/tex">\subset</script>” to denote this relationship:</p>
+
+  <script type="math/tex; mode=display">\{x \in \mathbb{R}    x \not\in \mathbb{Q}\} \subset \mathbb{R} \\ Y \subset \mathbb{R}</script>
+
+  <p class="text-center"><img src="/assets/img/set2.png" /></p>
+</blockquote>
+
+<p>A subset of a set can be viewed as a set we obtain from selecting elements from another set satisfying some statement.</p>
+
+<p class="text-center"><img src="/assets/img/subset.gif" /></p>
+
+<p class="_index">In ZF, <i>the axiom of specification</i> states that a set of such selection alway exists.</p>
+
+<script type="math/tex; mode=display">\forall A \, \exists B \, \forall x \, (x\in B \Leftrightarrow [(x\in A) \land \phi(x)])</script>
+
+<p>We can read it as:</p>
+
+<script type="math/tex; mode=display">\text{for all } A \text{ there exists } B \text{ such that forall } x, \\ x \text{ is in B only and only if } x \text { is in A and } \phi(x) \text{ is true.}</script>
+
+<script type="math/tex; mode=display">\text{or}</script>
+
+<script type="math/tex; mode=display">\text{for any set } A \text{ , there exists a set } B \\ \text{ that are made up of } \text{precisely the elements in } A \text{ each satisfying } \phi(x)</script>
+
+<div class="row d_shortcuts">
+$\exists$ means <a target="_blank" href="http://en.wikipedia.org/wiki/Existential_quantification"><i>there exists</i></a>.
+$\land$ means <i>and</i>.
+$\phi(x)$ here is known as a <a target="_blank" href="http://en.wikipedia.org/wiki/Metavariable">meta-variable</a> to indicate some statement about $x$.
+</div>
+<p><br /></p>
+
+<blockquote>
+  <p>We often refer to an axiom with meta-variable as an <b>axiom schema</b>. Axiom schema can generate an infinite number of axioms because we can make an axiom out of it by putting any statement into the variable.</p>
+
+  <p>In programming, you can visualize an axiom schema as a simply function that returns an axiom:</p>
+
+</blockquote>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">make_an_axiom</span><span class="p">(</span><span class="nx">phi</span><span class="p">){</span>
+     <span class="k">return</span> <span class="s2">"Forall A, there exists B such that for all x, if x is in B, then x is in A and "</span> <span class="o">+</span> <span class="nx">phi</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="kd">var</span> <span class="nx">axiom_schema</span> <span class="o">=</span> <span class="nx">make_an_axiom</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">axiom1</span> <span class="o">=</span> <span class="nx">axiom_schema</span><span class="p">(</span><span class="s2">"x is a negative number"</span><span class="p">);</span>
+ <span class="c1">// axiom1 would be: "Forall A, there exists B such that for all x, if x is in B, then x is in A and x is a negative number"</span>
+ <span class="kd">var</span> <span class="nx">axiom2</span> <span class="o">=</span> <span class="nx">axiom_schema</span><span class="p">(</span><span class="s2">"x is a prime number"</span><span class="p">);</span>
+ <span class="c1">// axiom1 would be: "Forall A, there exists B such that for all x, if x is in B, then x is in A and x is a prime number"</span></code></pre></figure>
+
+<blockquote>
+
+  <p>In the previous example, <script type="math/tex">\phi(x)</script> is the statement <script type="math/tex">x \not\in \mathbb{Q}</script>. So elements satisfying this statement, namely the irrational numbers, would be selected.</p>
+
+  <p class="text-center"><img src="/assets/img/specification.gif" /></p>
+</blockquote>
+
+<p>A set is always a subset of itself. Selecting all elements from a set gives us back the original set.</p>
+
+<script type="math/tex; mode=display">\forall A (A \subseteq A)</script>
+
+<blockquote>
+  <p><script type="math/tex">\subseteq</script> is the general notation for subset. It can be used for all subsets, while <script type="math/tex">\subset</script> can only be used when the subset is not the set itself.</p>
+
+  <p class="text-center"><img src="/assets/img/ss_vs_properss.png" /></p>
+</blockquote>
+
+<p>Empty set is the subset of all sets. Selecting no elements from a set and we would get an empty set.</p>
+
+<script type="math/tex; mode=display">\forall A ( \varnothing \subseteq A )</script>
+
+<h3 class="_index"><i>Axiom of specification</i> in Cantor's Paradise</h3>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Georg_Cantor">Cantor</a> is consideredly the founder of modern set theory, due to <a target="_blank" href="http://math.byu.edu/~grant/courses/cantor1874.pdf">his 1874’s paper</a> which illustrated a fundamental concept about infinite sets. Cantor’s Paradise is the name for the set theory came up by Cantor in the era before there were any axiomatic systems on set theory.</p>
+
+<blockquote>
+  <p>Cantor developed his theory of set in what we called an <a target="_blank" href="http://en.wikipedia.org/wiki/Intuitionism">“intuitive”</a> approach: he did not formalize the mathematical concepts with formal system such as <a target="_blank" href="http://en.wikipedia.org/wiki/First-order_logic">first-order logic</a> (which is what’s used in ZF and many other axiomatic systems). His set theory is in a sense a paradise due to its simplicity and straightforwardness. A paradise where, back in the early 20th century, many people had comfortably settled in with no plan to leave, even though at that time it was becoming clearer and clearer that such approach to developing a theory of set would result in paradoxes.</p>
+</blockquote>
+
+<p>Here is the concept of “specification” in Cantor’s paradise formalized into an axiom for comparison with the <i>axiom of specification</i> in ZF.</p>
+
+<p><i>Axiom of specification</i> in Cantor’s paradise</p>
+
+<script type="math/tex; mode=display">\exists B \, \forall x \, (x\in B \Leftrightarrow \phi(x))</script>
+
+<p><i>Axiom of specification</i> in ZF</p>
+
+<script type="math/tex; mode=display">\forall A \, \exists B \, \forall x \, (x\in B \Leftrightarrow [(x\in A) \land \phi(x)])</script>
+
+<p>Apparently, Cantor’s version allows a set to be constructed by all elements in the universe that satisfied <script type="math/tex">\phi(x)</script>. It does not restrict the elements of selection be in a particular set (hence <script type="math/tex">\phi(x)</script> instead of <script type="math/tex">[(x\in A) \land \phi(x)]</script>).</p>
+
+<p class="_index">This would lead to what's known as the <b>Russell Paradox</b>.</p>
+
+<p>Let’s say we call all sets that don’t contain themselves normal set, and define a set <script type="math/tex">V</script>, that contains all normal sets. We would realize that if <script type="math/tex">V</script> is itself a normal set, <script type="math/tex">V</script> must contain itself. But that would make <script type="math/tex">V</script> no longer a normal set (since a normal set does not contain itself).</p>
+
+<script type="math/tex; mode=display">A \not\in A \Rightarrow A \text{ is a normal set} \\ V = \{x    x \text{ is a normal set} \}</script>
+
+<script type="math/tex; mode=display">V \text{ is a normal set} \Rightarrow V \in V \\ V \in V \Rightarrow V \text{ is not a normal set}</script>
+
+<p>So we conclude that <script type="math/tex">V</script> shouldn’t contain itself. And that would mean <script type="math/tex">V</script> is a normal set…</p>
+
+<script type="math/tex; mode=display">V \text{ is not a normal set} \Rightarrow V \not\in V \\ V \not\in V \Rightarrow V \text{ is a normal set}</script>
+
+<p class="text-center"><img src="/assets/img/russell.gif" /></p>
+
+<p>We would end up having this absurd statement about <script type="math/tex">V</script>:</p>
+
+<script type="math/tex; mode=display">V \in V \Leftrightarrow V \not \in V</script>
+
+<p>And it’s derivable from <i>the axiom of specification</i> that <script type="math/tex">V</script> exists.</p>
+
+<script type="math/tex; mode=display">\exists B \, \forall x \, (x\in B \Leftrightarrow \phi(x)) \Rightarrow \exists V \, \forall x \, (x\in V \Leftrightarrow x \not\in x) \\ \exists V \, \forall x \, (x\in V \Leftrightarrow x \not\in x)  \Rightarrow \exists V (V \in V \Leftrightarrow V \not \in V)</script>
+
+<blockquote>
+  <p>The <a target="_blank" href="http://en.wikipedia.org/wiki/Barber_paradox">Barber paradox</a> is an alternative form of the Russell Paradox. Instead of talking about a set that contains all the sets that don’t contain themselves, the Barber paradox talks about a barber who only shaves men who do not shave themselves.</p>
+</blockquote>
+
+<p>In ZF, its <i>axiom of specification</i> avoided this paradox by restricting the selection process from all elements in the universe to only elements in a certain set.</p>
+
+<script type="math/tex; mode=display">\exists A \exists B \, \forall x \, (x\in B \Leftrightarrow ( x \in A \land \phi(x))) \not\Rightarrow  \exists V (V = \{x    x \text{ is a normal set} \} )</script>
+
+<p>So this <i>axiom of specification</i> only guarantees the existence of a set made up of elements from a set that’s already defined.</p>
+
+<script type="math/tex; mode=display">\exists U (U = \{x \in A    x \text{ is a normal set}\}) \\ \text{ here A is some set that is already defined}</script>
+
+<p>We can’t just “squeeze” <script type="math/tex">U</script> into <script type="math/tex">A</script> before <script type="math/tex">U</script> is defined. So <script type="math/tex">A</script> can’t contain <script type="math/tex">U</script>. The paradox can’t occur.</p>
+
+<blockquote>
+  <p>On the other hand, to avoid this paradox, Russell invented a theory of “type” (and included it in <a target="_blank" href="http://www.amazon.com/gp/product/1603864377/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1603864377&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=ROHQ2FJTIJ7KKDBG">Principia Mathematica</a>, a book he co-wrote with Whitehead). It basically states that every set has a “type number” based on what it contains.</p>
+
+  <p>In this universe, urelements exist. And they exist with type number 0. Sets containing urelements are type 1 objects. Sets containing type 1 objects are type 2 objects. And so on. We can only define a set by first having objects of lower types. This hierarchy of types prevent a set from containing itself because self-referencing is not possible in a system like this.</p>
+</blockquote>
+
+<blockquote>
+  <p><i>Von Neumann–Bernays–Gödel set theory (NGB)</i> extended ZF by introducing the concept of <b>class</b>. Class is basically a collection of things, just like sets in ZF. Sets in NGB are defined to be classes that are elements of other classes. So we end up having two types of classes: set and <b>“proper class”</b>. A “proper class” is simply a class that is not an element of any class. “Proper classes” can contain all sets that satisfy some statement. This would not result in Russell Paradox becaues “proper class” is by definition not a set. Just as we can’t define a set to contain all sets in the universe which satisfy some statement, we can’t define a class to contain all classes which satisfy some statement.</p>
+
+  <p class="text-center"><img src="/assets/img/properclass.png" /></p>
+</blockquote>
+
+<p class="text-center"> ● ● ● </p>
+
+<blockquote>
+  <p class="text-center _index"><b>Author's Note</b></p>
+
+  <p>This marks the end of our journey into the world of axiomatic systems on set theory (which are often referred to as “axiomatic set theories”, since each of them builds up a slightly different theory of set).</p>
+
+  <p>For the maths students who happen to be reading this article, you may find this rather short journey unsatisfactory. Many interesting things are not covered - <a target="_blank" href="http://mathworld.wolfram.com/GoedelsIncompletenessTheorem.html">the Gödel’s incompleteness theorem</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Skolem%27s_paradox">Skolem’s paradox</a>, <a target="_blank" href="http://math.stackexchange.com/questions/6489/can-you-explain-the-axiom-of-choice-in-simple-terms">the axiom of choice</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Non-well-founded_set_theory"> well-foundedness</a>, <a target="_blank" href="http://standish.stanford.edu/pdf/00000056.pdf">Aczel’s anti-foundation axiom (AFA)</a>, etc - basically stuff that you would expect to see in <a target="_blank" href="http://www.amazon.com/gp/product/0387900500/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0387900500&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=ZRDMG2EY62VWR3VB">textbooks on axiomatic set theory and logic</a>. Please keep in mind that this is in no mean an attempt to be a comprehensive and thorough guide on axiomatic systems.</p>
+
+  <p>This article is more for those who would like to take a glimpse into what an axiomatic system is and how a theory of set can be constructed from axioms. If you are one of these curious mind, I hope you are enjoying your expedition so far ;)</p>
+
+  <p>We shall now proceed to other concepts in set theory.</p>
+</blockquote>
+
+<p class="text-center"> ● ● ● </p>
+
+<h3 class="_index">What is an ordered pair? </h3>
+<p>An ordered pair is a mathematical object that contains 2 elements wherein there is an order.</p>
+
+<script type="math/tex; mode=display">(1,2)\not=(2,1)</script>
+
+<blockquote>
+  <p>So unlike sets, ordered pairs are distinguishable by the order of their elements.</p>
+</blockquote>
+
+<p>Formally, an ordered pair is defined to be a set of this structure:</p>
+
+<script type="math/tex; mode=display">(a,b) = \{\{a\},\{a,b\}\}</script>
+
+<p>As you can see, <script type="math/tex">(a,b) = (b,a)</script> only when <script type="math/tex">\{\{a\},\{a,b\}\} =\{\{b\},\{b,a\}\}</script>, which means <script type="math/tex">a = b</script>.</p>
+
+<blockquote>
+  <p>The set of all possible ordered pairs between two sets is known as the <b>Cartesian Product</b>.</p>
+
+  <p class="text-center"><img src="/assets/img/cartesian.png" /></p>
+
+  <p>It is often denoted with a cross <script type="math/tex">\times</script> (like the one used for multiplication).</p>
+</blockquote>
+
+<h3>What is a tuple?</h3>
+<p>Tuple is the generalization of ordered pair. It is a mathematical object containing <script type="math/tex">n</script> elements wherein there’s an order.</p>
+
+<script type="math/tex; mode=display">(1,2,3)\not=(1,3,2)</script>
+
+<blockquote>
+  <p><script type="math/tex">(1,2,3)</script> and <script type="math/tex">(1,3,2)</script> here are 3-tuples. An ordered pair is a 2-tuple.</p>
+</blockquote>
+
+<p>A <script type="math/tex">n</script>-tuple can be defined recursively like this</p>
+
+<script type="math/tex; mode=display">(a_1,a_2...a_n) = \{\{x\},\{x,a_n\}\} \text{ where }x=(a_1,a_2...a_{n-1})</script>
+
+<p>when we have one element, for simplicity, we would define it as <script type="math/tex">(a) = a</script>.</p>
+
+<blockquote>
+  <p>As we can see, the definition of 2-tuple (an ordered pair) above can be derived from the recursive definition.</p>
+
+  <script type="math/tex; mode=display">% <![CDATA[
+\begin{align} (a_1,a_2) &= \{\{x\},\{x,a_2\}\} \text{ where } x=(a_1)=a_1 \\ (a_1,a_2)&=\{\{a_1\},\{a_1,a_2\}\} \end{align} %]]></script>
+
+  <p>This is actually known as <i>Kuratowski definition</i> of ordered pair. (The recursive defintion of <script type="math/tex">n</script>-tuple is a generalization of it.)</p>
+
+  <p>There’re other ways of defining an ordered pair too. Here is <i>Hausdorff’s definition</i> that uses natural number:</p>
+
+  <script type="math/tex; mode=display">(a_1,a_2) = \{\{a_1,1\},\{a_2,2\}\}</script>
+
+  <p>We can once again generalize it for the definition of <script type="math/tex">n</script>-tuple:</p>
+
+  <script type="math/tex; mode=display">(a_1,a_2...a_n) = \{\{a_1,1\},\{a_2,2\} ... \{a_n,n\}\}</script>
+
+  <p>One with a curious mind may ask, which of these definitions should be used? And my answer to her or him is: it’s all up to you. It really doesn’t matter which one you pick. You can just come up with your own definition if you like. What’s important is to have mathematical objects that are distinguishable not only by the elements in them, but also the order the elements are in.</p>
+</blockquote>
+
+<h3 class="_index">What is a relation?</h3>
+<p>A relation is basically a set of <script type="math/tex">n</script>-tuples, each formed by elements from <script type="math/tex">n</script> sets.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+R_{AB}= \{(1,a),(2,c)\} \\[10px] \begin{align} A&=\{1,2,3,4\} \\ B&=\{a,b,c\} \end{align} %]]></script>
+
+<blockquote>
+  <p>Here, <script type="math/tex">R_{AB}</script> is a binary relation between <script type="math/tex">A</script> and <script type="math/tex">B</script>. We call it a binary relation when it’s between 2 sets.</p>
+</blockquote>
+
+<p class="text-center"><img src="/assets/img/relation.gif" /></p>
+
+<blockquote>
+  <p>A Cartesian Product, for example, is also a binary relation. Actually, any binary relation between 2 sets is a subset of their Cartesian Product. <script type="math/tex">R_{AB}</script> above is a subset of the Cartesian Product of <script type="math/tex">A</script> and <script type="math/tex">B</script>.</p>
+
+  <script type="math/tex; mode=display">A \times B = \{(1,a),(1,b),(1,c),(2,a),(2,b),(2,c),(3,a),(3,b),(3,c),(4,a),(4,b),(4,c)\}</script>
+
+  <script type="math/tex; mode=display">% <![CDATA[
+\begin{align} R_{AB} &= \{(1,a),(2,c)\} \\ R_{AB} &\subset (A \times B) \end{align} %]]></script>
+</blockquote>
+
+<p>Here is an example of relation between 3 sets.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+R_{ABC}= \{(1,a,-1),(2,c,-4)\} \\[10px] \begin{align} A&=\{1,2,3,4\} \\ B&=\{a,b,c\} \\ C&=\{-1,-2,-3,-4,-5\} \end{align} %]]></script>
+
+<p class="text-center"><img src="/assets/img/relation3.png" /></p>
+
+<h3 class="_index">What is a function?</h3>
+<p>A function is a relation in which no two <script type="math/tex">m</script>-tuples have their first <script type="math/tex">m-1</script> element(s) the same.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align} R_1&= \{(1,a),(2,c)\} \text{, } R_1 \text{ is a function}  \\ R_2&= \{(1,a),(1,c)\} \text{, } R_2 \text{ is not a function} \end{align} %]]></script>
+
+<p class="text-center"><img src="/assets/img/function.gif" /></p>
+
+<p><script type="math/tex">R_1</script> above is a 1-ary (or single-input) function. For any 1-ary function, the first element (which plays the role of “input”) has to be unique.</p>
+
+<blockquote>
+  <p>If we are to have a 2-ary function, our first 2 elements in each tuple must then be unique.</p>
+</blockquote>
+
+<p>Often, we would write:</p>
+
+<script type="math/tex; mode=display">R(inputs) = output</script>
+
+<p>to express that a particular <script type="math/tex">n</script>-tuple exists in the function.</p>
+
+<p>For example:</p>
+
+<script type="math/tex; mode=display">R(1) = a \\ \text{ would mean that } \\ (1,a) \in R</script>
+
+<p>And often, we use “<script type="math/tex">\mapsto</script>” to express which sets the function is a relation between.</p>
+
+<script type="math/tex; mode=display">R:A\mapsto B</script>
+
+<p>Here <script type="math/tex">A</script> (whose elements play the role of “input”) is called the domain, while <script type="math/tex">B</script> is called the codomain.</p>
+
+<blockquote>
+  <p>It is always true that for every element in the domain, there exists a tuple whose first element is that element. But it is not necessary the case that for every element in the co-domain there exists a tuple whose second element is that element. Take any <script type="math/tex">:A\mapsto B</script> for example.</p>
+
+  <script type="math/tex; mode=display">\forall a \in A \; \exists b \in B \; \exists t \in f, t(a) = b \; \; \text { is true}</script>
+
+  <script type="math/tex; mode=display">\forall a \in A \; \forall b \in B \; \exists t \in f, t(a) = b \; \; \text { may not be true}</script>
+</blockquote>
+
+<blockquote>
+  <p>For function with more than 1 input, the domain would be expressed as a Cartesian product of two or more sets:</p>
+
+  <script type="math/tex; mode=display">R:A_1 \times A_2 ... \times A_n \mapsto B</script>
+</blockquote>
+
+<p>Normally, we would define a function with a statement.</p>
+
+<script type="math/tex; mode=display">f(x)= x + 1</script>
+
+<p>This can be translated into</p>
+
+<script type="math/tex; mode=display">f=\{(x_1,x_1+1),(x_2,x_2+1)...\} \\ \text{where } x_n \text{ is an element in the domain} \\ \text{and } x_n+1 \text{ is an element in the codomain}</script>
+
+<blockquote>
+  <p>So to be more specific, we can state that <script type="math/tex">f</script> above maps from the set of real numbers to itself:</p>
+
+  <script type="math/tex; mode=display">f: \mathbb{R} \mapsto \mathbb{R}</script>
+
+  <p>Or the set of integers to itself:</p>
+
+  <script type="math/tex; mode=display">f: \mathbb{Z} \mapsto \mathbb{Z}</script>
+
+  <p>In the <script type="math/tex">f: \mathbb{Z} \mapsto \mathbb{Z}</script> case, we would get
+<script type="math/tex">f(1.618) = undefined</script>
+because <script type="math/tex">1.618</script> is not an integer, it is not in the domain.</p>
+</blockquote>
+
+<p>Functions can be classified into 4 types:</p>
+
+<ol>
+<li>not injective &amp; not surjective</li>
+<li>injective &amp; not surjective</li>
+<li>surjective &amp; not injective</li>
+<li>injective &amp; surjective</li>
+</ol>
+
+<p>When a function <script type="math/tex">f:X \mapsto Y</script> is injective, each element in X is mapped to a <b>unique</b> element in Y.</p>
+
+<script type="math/tex; mode=display">\forall a \forall b (a\not=b \Leftrightarrow f(a)\not=f(b)) \text{ where } a \text{ and } b \text{ is in the domain}</script>
+
+<p class="text-center"><img src="/assets/img/injective.png" /></p>
+
+<blockquote>
+  <p>We often refer to the set of elements being mapped to as image. (An image is always a subset of the codomain)</p>
+</blockquote>
+
+<p>When a function <script type="math/tex">f:X \mapsto Y</script> is surjective, <b>each element in Y</b> is mapped by a element in X.</p>
+
+<script type="math/tex; mode=display">\forall x (x\in Y \Leftrightarrow\exists a ( f(a)=x) )</script>
+
+<p class="text-center"><img src="/assets/img/surjective.png" /></p>
+
+<blockquote>
+  <p>For a surjective function, the codomain is equivalent to the image.</p>
+</blockquote>
+
+<p>If a function is both subjective and injective, we call it <b>bijective</b>. In a bijective function, each element in <script type="math/tex">X</script> is mapped to a unique element in <script type="math/tex">Y</script> and no element in <script type="math/tex">Y</script> is “unmapped”.</p>
+
+<p class="text-center"><img src="/assets/img/bijective.png" /></p>
+
+<blockquote>
+  <p>A function only has an inverse (often devoted as <script type="math/tex">f^{-1}</script> of <script type="math/tex">f</script>) if it is bijective.</p>
+</blockquote>
+
+<p class="text-center"> ● ● ● </p>
+
+<h3 class="_index">What is a cardinal number?</h3>
+<p>A cardinal number of a set can be viewed as the number of elements in the set. (denoted with <script type="math/tex">\:\:</script>)</p>
+
+<script type="math/tex; mode=display">X =\{4,5,1,2\} \\   X   = 4</script>
+
+<blockquote>
+  <p>The idea of “number” gets really fussy when we have sets that contain infinitely many elements. So formally, we say that two sets have the same cardinal number (or the same <b>cardinality</b>) only when there is a bijective function between them.</p>
+
+  <script type="math/tex; mode=display">\exists f (f:A \mapsto B \text{ is bijective}) \Leftrightarrow   A   =   B</script>
+
+  <p>That’s to say, when <script type="math/tex">A   =   B</script>,  we can construct a set of ordered pairs, each made up of a unique element from <script type="math/tex">A</script> and <script type="math/tex">B</script> individually, for all elements in <script type="math/tex">A</script> and <script type="math/tex">B</script>.</p>
+</blockquote>
+
+<h3 class="_index">On the idea of countable, infinite sets and their cardinal numbers</h3>
+<p>A set is considered to be “countable” when it has the same cardinality as a subset of <script type="math/tex">\mathbb{N}</script>.</p>
+
+<script type="math/tex; mode=display">\forall A ( \exists V (  A   =   V   \Leftrightarrow V \subseteq \mathbb{N}) \Rightarrow A \text { is a countable set})</script>
+
+<p>Or, to put it another way, a set is countable when there is an injective function from it to <script type="math/tex">\mathbb{N}</script>.</p>
+
+<p class="text-center"><img src="/assets/img/countable.png" /></p>
+
+<p>It’s pretty obvious that all finite sets (sets with finite number of elements) are countable.</p>
+
+<p>Other than <script type="math/tex">\mathbb{N}</script>, there’re sets containing infinitely many elements (often referred to as <b>infinite sets</b>) that are countable too. The set of all integers, <script type="math/tex">\mathbb{Z}</script>, for example, is countable. And interestingly, the two sets have the same cardinality.</p>
+
+<script type="math/tex; mode=display">\mathbb{Z}  =  \mathbb{N}  =\aleph_0</script>
+
+<p><script type="math/tex">\aleph_0</script> is the symbol used to represent this cardinal number. (As we can see, the cardinal number of infinite sets can no longer to represent by a natural number.)</p>
+
+<blockquote>
+  <p>To prove that <script type="math/tex">\mathbb{N}  = \mathbb{Z}</script>, we only need to show that there’s a bijective function from <script type="math/tex">\mathbb{N}</script> to <script type="math/tex">\mathbb{Z}</script>. And this is the bijective function:</p>
+
+  <script type="math/tex; mode=display">f(x)= \left\{ \begin{array}{ll} x-\frac{x+1}{2} \text{ if x is odd } \\ x - \frac{x \times 3}{2} \text{ if x is even}\end{array} \right.</script>
+
+  <p>This is bijective because we can just keep feeding in natural number to this function for it to output every integer:</p>
+
+  <script type="math/tex; mode=display">% <![CDATA[
+\begin{align} f(1)&=0 \\ f(2)&=-1 \\ f(3)&=1 \\ f(4)&=-2 \\ f(5)&=2 \end{align} \\... %]]></script>
+
+  <p>Every natural number is mapped to precisely one integer. All integers are mapped as there’re infinitely many natural numbers.</p>
+
+  <p>Actually, all infinite subsets of <script type="math/tex">\mathbb{N}</script> has <script type="math/tex">\aleph_0</script> as the cardinal number.</p>
+
+  <script type="math/tex; mode=display">X \text{ is an infinite set and } X \subseteq \mathbb{N} \Leftrightarrow \exists f (f:\mathbb{N}\mapsto X \text{ is bijective })</script>
+</blockquote>
+
+<p>But for any two infinite sets, do they always have the same cardinal number? Interestingly, the answer is no. In this sense, there are some infinities that are bigger than other infinities.</p>
+
+<p>Infinite sets with a bigger cardinal number than <script type="math/tex">\mathbb{N}</script> are “uncountable” or not “countable” (by definition).</p>
+
+<p class="_index"></p>
+
+<blockquote>
+  <p>The idea of “uncountable” can be demonstrated in what’s known as <b><i>Cantor’s diagonal argument</i></b>.</p>
+
+  <p>Let’s say we have an infinite set <script type="math/tex">A</script> which contains all the different binary (every digit is either 0 or 1) strings of infinite length.</p>
+
+  <p class="text-center"><img src="/assets/img/infinite_strings.png" /></p>
+
+  <p>Now let’s say we have another set, <script type="math/tex">B</script>, that contains all binary strings of infinite length enumerated by a function like this:</p>
+
+  <script type="math/tex; mode=display">f(n) = \left\{ \begin{array}{ll} \text { a string that repeats base-2 version of } (n - 1) \text{ with a 0 behind if n is odd } \\ \text{ a string that's bitwise NOT of } f(n-1) \text{ if n is even} \end{array} \right. \\ B = \{x    x = f(a), a \in \mathbb{N}\}</script>
+
+  <p class="text-center"><img src="/assets/img/infinite_strings_b.png" /></p>
+
+  <p>Apparently, this is a bijective function from <script type="math/tex">\mathbb{N}</script> to <script type="math/tex">B</script>. <script type="math/tex">B</script> has the cardinal number <script type="math/tex">\aleph_0</script>.</p>
+
+  <p>Now we can take the 1st digit of the 1st element, <script type="math/tex">f(1)</script>, flip it to a different value (0 to 1 or 1 to 0), take the 2nd digit of the 2nd element, <script type="math/tex">f(2)</script>, does the same thing to it … and get the <script type="math/tex">n</script>-th digit from every element to construct a binary string. We would end up with an infinitely long binary string that is different from every infinitely long string in <script type="math/tex">B</script>.</p>
+
+  <p class="text-center"><img src="/assets/img/cantor-diagonal-argument.gif" /></p>
+  <p>.
+And the same thing can be done to every set whose element is enumerated by <script type="math/tex">\mathbb{N}</script>. So we conclude that no matter how these binary strings are listed (using a bijective function with domain <script type="math/tex">\mathbb{N}</script>), we would always be able to construct a new permutation that’s not in the list. In other words, enumeration (using <script type="math/tex">\mathbb{N}</script>) cannot capture every permutation of infinitely long strings. We can’t list down every element in <script type="math/tex">A</script>, the set of all possible binary strings of infinite length.</p>
+
+  <script type="math/tex; mode=display">\forall B, \forall f ( f: \mathbb{N} \mapsto B \text{ is bijective} \Rightarrow (B\not=A) )</script>
+
+  <p>In this sense, <script type="math/tex">A</script> is “uncountable”. There exists no bijective function from <script type="math/tex">\mathbb{N}</script> to <script type="math/tex">A</script>.</p>
+</blockquote>
+
+<h3 class="_index" id="power_sets">On power sets</h3>
+<p>A power set of a set is the set of all its subsets. (Denote with <script type="math/tex">\mathcal{P}(X)</script>)</p>
+
+<script type="math/tex; mode=display">A = \{a,b,c\} \\ \mathcal{P}(A) = \{a,b,c,\{a,b\},\{b,c\},\{a,c\},\{a,b,c\}\}</script>
+
+<p>A power set of a set with a cardinal number <script type="math/tex">n</script> has a cardinal number <script type="math/tex">2^n</script>.</p>
+
+<script type="math/tex; mode=display">\mathcal{P}(A)  =2^{  A  }</script>
+
+<blockquote>
+  <p>For this reason, sometimes, a power set of set X is denoted as <script type="math/tex">2^X</script>.</p>
+
+  <p>Cantor’s theorem states that a power set of a set always has a bigger cardinal number than the set.</p>
+
+  <script type="math/tex; mode=display">\forall A(   \mathcal{P}(A)  >  A  )</script>
+
+  <p>This is true for infinite sets too. So there are infinitely many different-sizes infinite sets.</p>
+
+  <p><small>The chapter below has been edited on 19th Feb, 4:08 pm EST time. Great thanks to <a href="http://www.reddit.com/r/math/comments/2wfom3/set_theory_and_axiomatic_systems_explained_with/">some useful comments on Reddit</a>. </small></p>
+</blockquote>
+
+<h3 class="_index">On Aleph number and Beth number</h3>
+<p class="_index">The cardinal number of infinite sets are often expressed in <b>Aleph number</b> ($\aleph_n$) or <b>Beth number</b> ($\beth_n$) .</p>
+
+<p><script type="math/tex">\aleph_0</script> in the example above is the smallest Aleph number.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\aleph_0 < \aleph_1 < \aleph_2 < \aleph_3 ... %]]></script>
+
+<blockquote>
+  <p>So an infinite set is “uncountable” when its cardinality is not <script type="math/tex">\aleph_0</script>.</p>
+</blockquote>
+
+<p><script type="math/tex">\aleph_{n+1}</script> is simply defined to be the next cardinal number bigger than <script type="math/tex">\aleph_n</script></p>
+
+<blockquote>
+  <p>That is to say, there is no cardinal number between <script type="math/tex">\aleph_{n+1}</script> and <script type="math/tex">\aleph_n</script>.</p>
+</blockquote>
+
+<p>Meanwhile, the smallest Beth number is <script type="math/tex">\beth_0</script>, and by definition it is equivalent to <script type="math/tex">\aleph_0</script>.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\beth_0 < \beth_1 < \beth_2 < \beth_3... %]]></script>
+
+<script type="math/tex; mode=display">\aleph_0 = \beth_0</script>
+
+<p>Here is the recursive definitions for Beth numbers with bigger ordinals (bigger subscript <script type="math/tex">n</script>),</p>
+
+<script type="math/tex; mode=display">\beth_{a+1} =  \mathcal{P}({\beth_a})  = 2^{\beth_a}</script>
+
+<blockquote>
+  <p><script type="math/tex">\mathbb{R}</script> has <script type="math/tex">\beth_1</script> as the cardinality since <a target="_blank" href="http://math.stackexchange.com/a/118659/65082">there is a bijective function between <script type="math/tex">\mathbb{R}</script> and <script type="math/tex">\mathbb{P}(\mathbb{N})</script></a>.</p>
+</blockquote>
+
+<p>The <a target="_blank" href="http://logic.harvard.edu/EFI_CH.pdf">continuum hypothesis (CH)</a> states that</p>
+
+<script type="math/tex; mode=display">\beth_1 = \aleph_1</script>
+
+<p>This basically “closes the gap” between <script type="math/tex">\aleph_0</script> and <script type="math/tex">2^{\aleph_0}</script>.</p>
+
+<script type="math/tex; mode=display">\text{There is no infinity between } \aleph_0 \text{ and } 2^{\aleph_0}</script>
+
+<script type="math/tex; mode=display">2^{\aleph_0} = \aleph_1</script>
+
+<blockquote>
+  <p><small>this was added in on 20th Feb</small>
+Just roughly 70 years ago, <a target="_blank" href="http://en.wikipedia.org/wiki/Kurt_G%C3%B6del">Gödel</a> showed that <a target="_blank" href="http://press.princeton.edu/titles/1034.html">CH cannot be disproved</a> in ZF &amp; ZFC (ZF with <a href="http://www.amazon.com/gp/product/0486466248/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0486466248&amp;linkCode=as2&amp;tag=0aarhe-20&amp;linkId=U3BBFLSJIBOP2R36">the axiom of choice</a>).</p>
+
+  <p>Two decades later, <a target="_blank" href="http://en.wikipedia.org/wiki/Paul_Cohen_(mathematician)">Cohen</a> showed that <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC300611/">no contradiction would arise if CH is defined to be false</a> in ZF &amp; ZFC.</p>
+
+  <p>CH is therefore considered to be <a target="_blank" href="http://en.wikipedia.org/wiki/Independence_%28mathematical_logic%29">independent</a> of ZF and ZFC.</p>
+</blockquote>
+
+<p class="text-center"> - The End - </p>
+
+<blockquote>
+  <p><small>many typos &amp; careless mistakes were corrected and the last chapter was updated again on 20th Feb, EST 5:15 am. Huge thanks to f_of_g from Reddit for <a href="http://www.reddit.com/r/math/comments/2wfom3/set_theory_and_axiomatic_systems_explained_with/cor75oy">thoroughly pointing them out</a>. Truly appreciate that.</small></p>
+
+  <p>The last chapter was later on edited again on 24th Feb, EST time 4:25pm</p>
+</blockquote>
+</div>
+<div class="articleFooter">
+<div class="kudobox">
+<div class="kudos" data-url="0a.io/set-theory-and-axiomatic-systems"></div>
+</div>
+<div class="showDisqus display-none">
+<a>Show Comments</a>
+</div>
+
+<div class="discussion">
+View discussions on <a href="https://news.ycombinator.com/item?id=9074412">Hacker News</a> & <a href="https://www.reddit.com/r/math/comments/2wfom3/set_theory_and_axiomatic_systems_explained_with/">Reddit</a>.
+</div>
+
+</div>
+<div id="disqus_thread">
+    
+</div>
+</div>
+</div>
+
+  <div class="archywrap">
+  <div class="container garamond">
+      <div class="archysub subtitleBottom"><p>The painting is <a href=\"http://www.moma.org/collection//browse_results.php?criteria=O%3AAD%3AE%3A6165&page_number=56&template_id=1&sort_order=1\"><i>The Bride, After Duchamp</i></a> by <a href=\"http://en.wikipedia.org/wiki/Jacques_Villon\">Jacques Villon</a>, 1934.
+</p></div>
+        
+        
+        
+        
+        
+            
+
+
+        
+            
+
+
+        
+            
+
+
+        
+            
+
+
+        
+            
+
+<div class="archywrap">
+<div class="container">
+<div class="archy_scroll_view_controller">
+
+<div class="archylist"><h2><span>Read next</span></h2>
+  <div class="row showIFFWideScreen">
+    <div class="col-sm-4 archyitemdimension">
+    
+    
+    
+    
+    
+    <!-- this is for the read more session of a post; such that it doesnt show own link -->
+      
+      
+       <div class="archyitem" itemscope itemtype="http://schema.org/Article">
+        <div class="archydate_mobile PTSerif">
+          <span itemprop="datePublished">
+          Oct 27, 2014
+          </span>
+        </div>
+        <a href="/calculus-explained" class="thumbnail"><img src=" /assets/img/moonlit_night.jpg " alt="" itemprop='thumbnailUrl'>
+          <div class="vcenter archycover">
+            <div class="vcenter archydate">
+              <span class="big">
+              27
+              </span><br>
+              Oct 2014
+            </div>
+          </div>
+        </a>
+        <div class="archytitle PTSerif">
+          <span>
+          <a itemprop="name" class="opacity_hover" href="/calculus-explained">
+            0a explains: Calculus (with pics and gifs)
+          </a><br>
+          </span>
+        </div>
+      </div>
+
+      
+    
+    
+    </div>
+    <div class="col-sm-4 archyitemdimension">
+    
+    
+    
+    
+    
+    <!-- this is for the read more session of a post; such that it doesnt show own link -->
+      
+      
+    
+    
+    </div>
+    <div class="col-sm-4 archyitemdimension">
+    
+    
+    
+    
+    
+    <!-- this is for the read more session of a post; such that it doesnt show own link -->
+      
+      
+    
+    
+    </div>
+</div>
+<div class="row showIFFNotWideScreen">
+
+
+
+
+<!-- this is for the read more session of a post; such that it doesnt show own link -->
+      <div class="col-sm-4 archyitemdimension">
+       <div class="archyitem" itemscope itemtype="http://schema.org/Article">
+        <div class="archydate_mobile PTSerif">
+          <span itemprop="datePublished">
+          Oct 27, 2014
+          </span>
+        </div>
+        <a href="/calculus-explained" class="thumbnail"><img src=" /assets/img/moonlit_night.jpg " alt="" itemprop='thumbnailUrl'>
+          <div class="vcenter archycover">
+            <div class="vcenter archydate">
+              <span class="big">
+              27
+              </span><br>
+              Oct 2014
+            </div>
+          </div>
+        </a>
+        <div class="archytitle PTSerif">
+          <span>
+          <a itemprop="name" class="opacity_hover" href="/calculus-explained">
+            0a explains: Calculus (with pics and gifs)
+          </a><br>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+        
+  </div>
+  </div>
+
+</article>
+<script src="/assets/js/kudosplease.js">
+</script>
+<script src="/assets/js/article.js">
+</script>
+
+
+
+<div class="loading_maths">
+You may experience lag <br>while maths is being rendered (LaTeX).
+</div>
+
+<div class="fixed_top_nav">
+<div class="nav1">
+<div>
+<div class="inlineblock">1. Prologue + Intro </div>
+<div class="inlineblock">2. Axiomatic systems and axioms</div>
+<div class="inlineblock">3. Set theory and sets</div>
+<div class="inlineblock">4. Axiom of extensionality (AoE)</div>
+<div class="inlineblock">5. More on AoE</div>
+</div>
+<div>
+<div class="inlineblock">6. Set defined with statement</div>
+<div class="inlineblock">7. Set operators</div>
+<div class="inlineblock">8. Subset</div>
+<div class="inlineblock">9. Axiom of specification (AoS)</div>
+<div class="inlineblock">10. AoS in Cantor's paradise</div>
+<div style="margin: 10px;cursor: pointer;color: #aaa; display: inline-block;" class="pretendToBeInlineBlock">......</div>
+</div>
+</div><div class="nav2 hiding">
+<div>
+<div class="inlineblock">11. Russell Paradox</div>
+<div class="inlineblock">12. Author's Note</div>
+<div class="inlineblock">13. Order pair & Tuple</div>
+<div class="inlineblock">14. Relation</div>
+<div class="inlineblock">15. Function</div>
+</div>
+<div>
+<div class="inlineblock">16. Cardinal number</div>
+<div class="inlineblock">17. "Countable" sets</div>
+<div class="inlineblock">18. Cantor's diagonal argument</div>
+<div class="inlineblock">19. Power sets</div>
+<div class="inlineblock">20. Aleph number & Beth number</div>
+</div>
+</div></div>
+
+<footer class="foot">
+
+<div>
+<a target="_blank" href="https://github.com/0a-/0a-.github.io"> View source</a></div>
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54767208-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+
+
+</html>

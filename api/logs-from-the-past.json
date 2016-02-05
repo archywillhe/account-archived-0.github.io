@@ -1,0 +1,50 @@
+
+
+
+
+
+{ "posts" : [
+    
+        {
+            "title": "The Game That Matters",
+            "img": "/assets/img/mu.jpeg" ,
+            "day":  "16",
+            "monthYear":  "Apr 2015",
+            "date":  "Apr 16, 2015",
+            "url": "/the-game-that-matters/"
+        }, 
+        {
+            "title": "Prologue for 0a explains: Set Theory and Axiomatic Systems",
+            "img": "/assets/img/untitled-lettres-1998.jpg" ,
+            "day":  "19",
+            "monthYear":  "Feb 2015",
+            "date":  "Feb 19, 2015",
+            "url": "/prologue-for-0a-explains-set-theory-and-axiomatic-systems"
+        }, 
+        {
+            "title": "On screwing up: I was still a loser in human interaction",
+            "img": "/assets/img/radimKacer_painting.jpg" ,
+            "day":  "13",
+            "monthYear":  "Dec 2014",
+            "date":  "Dec 13, 2014",
+            "url": "/i-was-still-a-loser-in-human-interaction"
+        }, 
+        {
+            "title": "Sometime, somewhere, in this world in which we live: a poem, with a sum-up on the black hole information paradox",
+            "img": "/assets/img/img3.jpg" ,
+            "day":  "23",
+            "monthYear":  "Sep 2014",
+            "date":  "Sep 23, 2014",
+            "url": "/sometime-somewhere-in-this-world-in-which-we-live/"
+        }, 
+        {
+            "title": "And by you I mean <i>you</i> who is me",
+            "img": "/assets/img/img.jpg" ,
+            "day":  "10",
+            "monthYear":  "Sep 2014",
+            "date":  "Sep 10, 2014",
+            "url": "/and-by-you-i-mean-you-who-is-me/"
+        }
+] }
+
+

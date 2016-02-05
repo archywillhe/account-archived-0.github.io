@@ -1,0 +1,124 @@
+<div class="archywrap logs_from_the_past">
+<div class="container">
+<div class="archy_scroll_view_controller">
+<div class="archylist">
+  <div class="row" ng-if="wideScreen">
+    <div class="col-sm-4 archyitemdimension">
+    <div ng-repeat="post in postsCol[0] track by $index">
+     <div class="archyitem" itemscope itemtype="http://schema.org/Article">
+    <div class="archydate_mobile PTSerif">
+      <span itemprop="datePublished">
+      {{ post.date }} 
+      </span>
+    </div>
+    <a target="_self" href="{{ post.url }}" class="thumbnail"><img ng-src="{{ post.img }}" alt="" itemprop='thumbnailUrl'>
+      <div class="vcenter archycover">
+        <div class="vcenter archydate">
+          <span class="big">
+          {{ post.day }} 
+          </span><br>
+          {{ post.monthYear }} 
+        </div>
+      </div>
+    </a>
+    <div class="archytitle PTSerif">
+      <span>
+      <a target="_self" itemprop="name" class="opacity_hover" href="{{ post.url }}" ng-bind-html="post.title">
+      </a><br>
+      </span>
+    </div>
+</div>
+
+    </div>
+    </div>
+    <div class="col-sm-4 archyitemdimension">
+    <div ng-repeat="post in postsCol[1] track by $index">
+    <div class="archyitem" itemscope itemtype="http://schema.org/Article">
+    <div class="archydate_mobile PTSerif">
+      <span itemprop="datePublished">
+      {{ post.date }} 
+      </span>
+    </div>
+    <a target="_self" href="{{ post.url }}" class="thumbnail"><img ng-src="{{ post.img }}" alt="" itemprop='thumbnailUrl'>
+      <div class="vcenter archycover">
+        <div class="vcenter archydate">
+          <span class="big">
+          {{ post.day }} 
+          </span><br>
+          {{ post.monthYear }} 
+        </div>
+      </div>
+    </a>
+    <div class="archytitle PTSerif">
+      <span>
+      <a target="_self" itemprop="name" class="opacity_hover" href="{{ post.url }}" ng-bind-html="post.title">
+      </a><br>
+      </span>
+    </div>
+</div>
+
+    </div>
+    </div>
+    <div class="col-sm-4 archyitemdimension">
+    <div ng-repeat="post in postsCol[2] track by $index">
+     <div class="archyitem" itemscope itemtype="http://schema.org/Article">
+    <div class="archydate_mobile PTSerif">
+      <span itemprop="datePublished">
+      {{ post.date }} 
+      </span>
+    </div>
+    <a target="_self" href="{{ post.url }}" class="thumbnail"><img ng-src="{{ post.img }}" alt="" itemprop='thumbnailUrl'>
+      <div class="vcenter archycover">
+        <div class="vcenter archydate">
+          <span class="big">
+          {{ post.day }} 
+          </span><br>
+          {{ post.monthYear }} 
+        </div>
+      </div>
+    </a>
+    <div class="archytitle PTSerif">
+      <span>
+      <a target="_self" itemprop="name" class="opacity_hover" href="{{ post.url }}" ng-bind-html="post.title">
+      </a><br>
+      </span>
+    </div>
+</div>
+
+    </div>
+    </div>
+</div>
+<div class="row" ng-if="!wideScreen">
+<div class="col-sm-4 archyitemdimension"  ng-repeat="post in posts track by $index">
+<div class="archyitem" itemscope itemtype="http://schema.org/Article">
+    <div class="archydate_mobile PTSerif">
+      <span itemprop="datePublished">
+      {{ post.date }} 
+      </span>
+    </div>
+    <a target="_self" href="{{ post.url }}" class="thumbnail"><img ng-src="{{ post.img }}" alt="" itemprop='thumbnailUrl'>
+      <div class="vcenter archycover">
+        <div class="vcenter archydate">
+          <span class="big">
+          {{ post.day }} 
+          </span><br>
+          {{ post.monthYear }} 
+        </div>
+      </div>
+    </a>
+    <div class="archytitle PTSerif">
+      <span>
+      <a target="_self" itemprop="name" class="opacity_hover" href="{{ post.url }}" ng-bind-html="post.title">
+      </a><br>
+      </span>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
