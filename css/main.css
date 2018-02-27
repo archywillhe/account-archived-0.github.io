@@ -1776,8 +1776,3 @@ code {
   color: #f3f3f3; }
 .dailylog .kudos.finish:after {
   color: #2b6dde; }
-
-
-.dailylogs .archycontent a, .dailylogs .colored_anchor{
-  color: #06acf9 !important
-}
