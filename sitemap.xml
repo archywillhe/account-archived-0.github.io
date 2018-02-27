@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/article/760-forSAT2/</loc>
+<loc>http://localhost:4000/article/experiment/</loc>
 <lastmod>2018-02-27T10:00:18+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/article/an-interesting-experiment-I-conducted-in-ACJC/</loc>
+<loc>http://localhost:4000/article/experiment/</loc>
 <lastmod>2018-02-27T10:00:18+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/article/i-have-to-be-more-productive/</loc>
+<loc>http://localhost:4000/article/productive/</loc>
 <lastmod>2018-02-27T10:00:18+08:00</lastmod>
 </url>
 <url>
@@ -45,7 +45,7 @@
 <lastmod>2014-09-10T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/0a-explains-javascript-closure-and-design-patterns/</loc>
+<loc>http://localhost:4000/JavaScript-closure-and-design-patterns/</loc>
 <lastmod>2014-09-17T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -57,7 +57,7 @@
 <lastmod>2014-09-23T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/0a-explains-calculus-with-pics-and-gifs/</loc>
+<loc>http://localhost:4000/calculus-explained/</loc>
 <lastmod>2014-10-27T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -73,11 +73,11 @@
 <lastmod>2014-12-13T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs/</loc>
+<loc>http://localhost:4000/set-theory-and-axiomatic-systems-explained/</loc>
 <lastmod>2015-02-19T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/prologue-for-0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs/</loc>
+<loc>http://localhost:4000/prologue-for-set-theory-and-axiomatic-systems-explained/</loc>
 <lastmod>2015-02-19T00:00:00+08:00</lastmod>
 </url>
 <url>
