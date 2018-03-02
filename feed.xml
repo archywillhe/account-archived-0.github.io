@@ -1,123 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0a: a thunk, a propositional variable, a \n</title>
-    <description>May the *force* be with you. Let us embrace null-arity. There exists a more straightforward interpretation as well. </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Feb 2018 10:00:18 +0800</pubDate>
-    <lastBuildDate>Tue, 27 Feb 2018 10:00:18 +0800</lastBuildDate>
+    <title>0a (Migrated)</title>
+    <description>As of 2018 0a.io has been migrated to zer0.degree </description>
+    <link>0a.io</link>
+    <atom:link href="http://0a.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 1 Mar 2018 10:00:18 +0800</pubDate>
+    <lastBuildDate>Thu, 1 Mar 2018 10:00:18 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
-    
+
       <item>
-        <title>End Of Chapter 1</title>
+        <title>Zer0.degree</title>
         <description>
 </description>
-        <pubDate>Sat, 28 Nov 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/end-of-chapter-1/</link>
-        <guid isPermaLink="true">http://localhost:4000/end-of-chapter-1/</guid>
-        
-        
+        <pubDate>Thu, 1 Mar 2018 10:00:18 +0800</pubDate>
+        <link>http://zer0.degree</link>
+        <guid isPermaLink="true">http://zer0.degree</guid>
       </item>
-    
-      <item>
-        <title>Nondeterministic Turing Machines Vs Deterministic Turing Machines</title>
-        <description>
-</description>
-        <pubDate>Sun, 08 Nov 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/nondeterministic-Turing-machines-vs-deterministic-Turing-machines/</link>
-        <guid isPermaLink="true">http://localhost:4000/nondeterministic-Turing-machines-vs-deterministic-Turing-machines/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>To Aleph 1 And Beyond</title>
-        <description>
-</description>
-        <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/to-aleph-1-and-beyond/</link>
-        <guid isPermaLink="true">http://localhost:4000/to-aleph-1-and-beyond/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Attending Univ Lecture Live For The First Time</title>
-        <description>
-</description>
-        <pubDate>Tue, 08 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/attending-univ-lecture-live-for-the-first-time/</link>
-        <guid isPermaLink="true">http://localhost:4000/attending-univ-lecture-live-for-the-first-time/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>While Working On The Conjecture</title>
-        <description>
-</description>
-        <pubDate>Tue, 25 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/while-working-on-the-conjecture/</link>
-        <guid isPermaLink="true">http://localhost:4000/while-working-on-the-conjecture/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A Simple Proof For A Basic Operational Equivalence Regarding Multisets</title>
-        <description>
-</description>
-        <pubDate>Mon, 24 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/a-simple-proof-for-a-basic-operational-equivalence-regarding-multisets/</link>
-        <guid isPermaLink="true">http://localhost:4000/a-simple-proof-for-a-basic-operational-equivalence-regarding-multisets/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>The Great Firewall Of China</title>
-        <description>
-</description>
-        <pubDate>Sun, 23 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/the-great-firewall-of-China/</link>
-        <guid isPermaLink="true">http://localhost:4000/the-great-firewall-of-China/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A Strange Little Thing About Human Conscious Awareness About The Flow Of Time</title>
-        <description>
-</description>
-        <pubDate>Sun, 09 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/a-strange-little-thing-about-human-conscious-awareness-about-the-flow-of-time/</link>
-        <guid isPermaLink="true">http://localhost:4000/a-strange-little-thing-about-human-conscious-awareness-about-the-flow-of-time/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>On Reason</title>
-        <description>
-</description>
-        <pubDate>Thu, 06 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/on-reason/</link>
-        <guid isPermaLink="true">http://localhost:4000/on-reason/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Boolean Satisfiability Problem Or Sat In 5 Minutes</title>
-        <description>
-</description>
-        <pubDate>Thu, 06 Aug 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/boolean-satisfiability-problem-or-sat-in-5-minutes/</link>
-        <guid isPermaLink="true">http://localhost:4000/boolean-satisfiability-problem-or-sat-in-5-minutes/</guid>
-        
-        
-      </item>
-    
+
   </channel>
 </rss>
